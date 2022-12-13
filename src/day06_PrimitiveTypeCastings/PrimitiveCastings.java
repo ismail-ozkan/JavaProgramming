@@ -1,0 +1,58 @@
+package day06_PrimitiveTypeCastings;
+
+public class PrimitiveCastings {
+
+    public static void main(String[] args) {
+
+        byte a = 100;
+        short b = a; //short b = (short)a  ----> this is implicitly. here (short) is a casting operator
+
+        int c = (int) b;
+        // int c = (int)b
+
+        long d = c;
+        //       (long) c
+
+        float e = d;
+        double f = e;
+
+        System.out.println("--------------------------------");
+
+
+        int x = 55;
+        // short y = x; it doesn't work
+        short y = (short)x;  // explicit casting
+        System.out.println(x + ":" + y);
+
+
+
+        long j = 100000;
+        short k = (short)j;
+        System.out.println(j + "--->" + k);
+
+
+        double l = 2.5;
+        float m = (float)l;
+
+
+        double n = 10.8;
+        int s = (int)n;// integer part is taken so s = 10
+
+        System.out.println(n + "--->" + s);
+
+
+        System.out.println("--------------------------------");
+
+        // shortcut for casting types ----> alt + enter + select 1. option
+
+        double d1 = 20.5;
+        short s1 = (short) d1;
+
+        System.out.println(d1 + "--->" + s1);
+
+        float f1 = 20.5f;
+        long l1 = (long) f1;
+
+    }
+
+}
