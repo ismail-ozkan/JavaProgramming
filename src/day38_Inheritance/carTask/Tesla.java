@@ -1,4 +1,4 @@
-package day38_Inheritance.warmupTask;
+package day38_Inheritance.carTask;
 
 public class Tesla extends Car{
     public Tesla(String model, String color, int year, int miles, double price) {

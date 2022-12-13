@@ -1,4 +1,4 @@
-package day38_Inheritance.warmupTask;
+package day38_Inheritance.carTask;
 
 public class BMW extends Car{
 
