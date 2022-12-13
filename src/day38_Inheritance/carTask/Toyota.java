@@ -8,4 +8,10 @@ public class Toyota extends Car{
     public void reliabile(){
         System.out.println(brand + " " + model + " is reliable");
     }
+    @Override// Optional, we use it for checking if the method is override or not
+     public void start(){
+         System.out.println("Twist the key to ignition to start  " + brand + " " + model);
+     }
+
+
 }
