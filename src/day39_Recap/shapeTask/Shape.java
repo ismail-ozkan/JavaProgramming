@@ -31,6 +31,18 @@ public class Shape {
     public double perimeter(){
         return 0;
     }
+    //@Override// --> optional !!
+
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "name='" + name + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
+
 }
 /*
 Shape:
