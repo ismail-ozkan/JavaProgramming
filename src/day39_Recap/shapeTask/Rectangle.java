@@ -48,6 +48,8 @@ public class Rectangle extends Shape{
         return "Rectangle{" +
                 "length=" + length +
                 ", width=" + width +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
                 '}';
     }
 }
