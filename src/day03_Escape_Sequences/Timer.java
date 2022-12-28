@@ -1,4 +1,4 @@
-package day02_HelloWorld;
+package day03_Escape_Sequences;
 
 import java.util.Scanner;
 

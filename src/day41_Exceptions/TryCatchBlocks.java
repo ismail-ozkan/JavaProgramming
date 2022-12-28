@@ -1,5 +1,7 @@
 package day41_Exceptions;
 
+import MySelf.Unit4Quiz1;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,15 +14,23 @@ public class TryCatchBlocks {
 
         try {
 
-            System.out.println(9 / 0);
+            System.out.println("Try block1");
 
-            System.out.println("Try block");
+            System.out.println(9 / 0 );
+
+            System.out.println("Try block2");
+
+        } catch (IndexOutOfBoundsException e) {
+
+            System.out.println("IndexOutOfBoundsException Catch Block");
+            e.printStackTrace();
+            e.getMessage();
 
         } catch (ArithmeticException e) {
 
-            System.out.println("Catch Block");
-            System.out.println("ArithmeticException was occurred");
-
+            System.out.println("ArithmeticException Catch Block");
+            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         System.out.println("Test 1 Completed");
@@ -37,9 +47,9 @@ public class TryCatchBlocks {
 
             System.out.println("Try Blocks");
         } catch (RuntimeException e) {//ArrayIndexOutOfBoundsException(sub class of IndexOutOfBoundsException)
-            /*System.out.println("Catch Block");
+            System.out.println("Catch Block");
 
-            System.out.println("RuntimeException is occurred");*/
+            System.out.println("RuntimeException is occurred");
             e.printStackTrace();// common usage
 
             //System.out.println(e.getMessage());//Index 200 out of bounds for length 5
