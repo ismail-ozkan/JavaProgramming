@@ -12,7 +12,5 @@ public class DogObj {
 
         dog.staticMet();
         Animal.staticMet();
-
-
     }
 }
